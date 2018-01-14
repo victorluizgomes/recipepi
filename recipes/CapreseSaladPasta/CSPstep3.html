@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>Boil water for the pasta. In a skillet on low heat, heat the olive oil, garlic and cushed red pepper. Cook on low for 5 - 10 minutes allowing the garlic to soften (but not brown!) and infuse the oil. Begin cooking the pasta.</strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="CSPstep4.html">nextStep</a>
+    <a class="nextStep" href="CSPstep2.html">nextStep</a>
+    <a class="nextStep" href="CapreseSaladPasta.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[2].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

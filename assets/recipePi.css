@@ -13,9 +13,8 @@ body {
 
 #victorRecipeTitle {
 	font-size: 75px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	width: 1090px;
+	margin: 45px auto;
+	width: 1070px;
 }
 
 #ingredientsTitle {
@@ -23,12 +22,17 @@ body {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 30px;
-	width: 530px;
+	width: 590px;
+}
+
+#centeredMenuButtons {
+	margin: 0 auto;
+	width: 480px;
 }
 
 #centeredButtons {
 	margin: 0 auto;
-	width: 460px;
+	width: 420px;
 }
 
 .button {
@@ -41,12 +45,12 @@ body {
     text-decoration: none;
     display: inline-block;
     min-width: 480px;
-    font-size: 70px;
+    font-size: 90px;
 }
 
 #centeredRecipeList {
 	margin: 0 auto;
-	width: 660px;
+	width: 670px;
 }
 
 .steps {

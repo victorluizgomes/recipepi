@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>Season the roast with salt and pepper to taste. Brown on all sides in a large skillet over high heat, about 4 minutes per side.</strong></p>
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="SCPRstep2.html">nextStep</a>
+    <a class="nextStep" href="SlowCookerPotRoast.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            if(keyCode == 43) { // + key
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

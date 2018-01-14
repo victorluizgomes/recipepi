@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>Meanwhile, whisk together apple cider vinegar, soy sauce, honey, ketchup, and garlic. Pour sauce into skillet. Simmer together with the chicken for 5 minutes, until the chicken is cooked through and the sauce has thickened slightly.</strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="SASCstep4.html">nextStep</a>
+    <a class="nextStep" href="SASCstep2.html">nextStep</a>
+    <a class="nextStep" href="SweetAndSourChicken.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[2].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>
