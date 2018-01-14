@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RecipePi</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+	<div>
+		<p class="steps"><strong>Preheat oven to 180C/350F. Scatter onion and garlic in a big baking dish, then place butter in the center. Bake for 15 minutes (check at 12 minutes to mix)</strong></p>
+		<img class="arrowFoward" src="../../arrowFoward.png">
+	</div>
+
+	<a class="nextStep" href="OCRstep2.html">nextStep</a>
+	<a class="nextStep" href="ovenChickenRice.html"></a>
+
+	<script>
+		var indexButtons = document.querySelectorAll(".nextStep"); 
+
+		window.addEventListener('keypress', function (e) {
+			var keyCode = e.keyCode;
+		    console.log(keyCode);
+
+		    if(keyCode == 54) { // right key
+
+		    	indexButtons[0].click();
+		    }
+		    if(keyCode == 43) { // + key
+		    	indexButtons[1].click();
+		    }
+
+		    if(keyCode == 45) { // minus key ( - )
+		    	window.history.back();
+		    }
+		});
+	</script>
+
+</body>
+</html>

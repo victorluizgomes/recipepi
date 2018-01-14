@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RecipePi</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+	<div>
+		<p class="steps"><strong>Reduce heat to low and let cook covered for 15-20 minutes, or until pasta is tender</strong></p>
+		<img class="arrowBackward" src="../../arrowBackward.png">
+		<img class="arrowFoward" src="../../arrowFoward.png">
+	</div>
+
+	<a class="nextStep" href="OPCstep5.html">nextStep</a>
+	<a class="nextStep" href="OPCstep3.html">nextStep</a>
+	<a class="nextStep" href="onePotCajun.html"></a>
+
+	<script>
+		var indexButtons = document.querySelectorAll(".nextStep"); 
+
+		window.addEventListener('keypress', function (e) {
+			var keyCode = e.keyCode;
+		    console.log(keyCode);
+
+		    if(keyCode == 54) { // right key
+
+		    	indexButtons[0].click();
+		    }
+		    
+		    if(keyCode == 52) { // left key
+
+		    	indexButtons[1].click();
+		    }
+
+		    if(keyCode == 43) { // + key
+		    	indexButtons[2].click();
+		    }
+		    if(keyCode == 45) { // minus key ( - )
+		    	window.history.back();
+		    }
+		});
+	</script>
+
+</body>
+</html>

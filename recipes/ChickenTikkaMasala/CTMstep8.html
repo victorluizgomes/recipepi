@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>After all the chicken is cooked, cut it into 1 1/2 inch pieces. Add the chicken to the simmering sauce and continue to gently simmer, stirring occasionally, for 5 minutes. Remove pot/pan from heat, then stir in the black pepper and chopped cilantro, and season with salt.</strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="CTMstep9.html">nextStep</a>
+    <a class="nextStep" href="CTMstep7.html">nextStep</a>
+    <a class="nextStep" href="ChickenTikkaMasala.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[2].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+	background-color: rgb(203, 255, 179);
+	font-family: Tahoma;
+}
+
+#indexTitle {
+	max-height: 200px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 130px;
+}
+
+#victorRecipeTitle {
+	font-size: 75px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 1090px;
+}
+
+#ingredientsTitle {
+	font-size: 100px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	width: 530px;
+}
+
+#centeredButtons {
+	margin: 0 auto;
+	width: 460px;
+}
+
+.button {
+    background-color: rgb(130, 150, 255); 
+    border: none;
+    color: white;
+    margin-bottom: 100px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 480px;
+    font-size: 70px;
+}
+
+#centeredRecipeList {
+	margin: 0 auto;
+	width: 660px;
+}
+
+.steps {
+	font-size: 75px;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 750px;
+}
+
+.startCookingButton {
+	background-color: rgb(130, 150, 255); 
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.recipeList {
+	background-color: rgb(130, 150, 255); 
+    border: none;
+    color: white;
+    margin-bottom: 20px;
+    padding: 15px 50px;
+    text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	min-width: 570px;
+	font-size: 30px;
+}
+.selected {
+	background-color: rgb(70, 205, 70); 
+}
+
+.ingredientsList {
+	font-size: 30px;
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.nextStep {
+	visibility: hidden;
+}
+
+.arrowBackward {
+	width: 150px;
+	opacity: 0.6;
+	position: absolute;
+	left: 50px;
+	top: 450px;
+}
+
+.arrowFoward {
+	width: 150px;
+	opacity: 0.6;
+	position: absolute;
+	right: 50px;
+	top: 450px;
+}
+

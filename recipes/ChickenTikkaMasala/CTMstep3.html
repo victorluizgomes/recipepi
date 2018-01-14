@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>In another small bowl, whisk together the coriander, cumin, cardamom, nutmeg, paprika, cayenne, and grated ginger. In a 4-qt pot, heat the butter over medium-high heat.</strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="CTMstep4.html">nextStep</a>
+    <a class="nextStep" href="CTMstep2.html">nextStep</a>
+    <a class="nextStep" href="ChickenTikkaMasala.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[2].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

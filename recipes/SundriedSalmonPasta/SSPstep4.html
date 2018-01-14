@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RecipePi</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+	<div>
+		<p class="steps"><strong> Stir in cream cheese and the chicken broth and mix until smooth. Season with salt and pepper, to taste and turn the heat to low.</strong></p>
+		<img class="arrowBackward" src="../../arrowBackward.png">
+		<img class="arrowFoward" src="../../arrowFoward.png">
+	</div>
+
+	<a class="nextStep" href="SSPstep5.html">nextStep</a>
+	<a class="nextStep" href="SSPstep3.html">nextStep</a>
+	<a class="nextStep" href="sundriedSalmonPasta.html"></a>
+
+	<script>
+		var indexButtons = document.querySelectorAll(".nextStep"); 
+
+		window.addEventListener('keypress', function (e) {
+			var keyCode = e.keyCode;
+		    console.log(keyCode);
+
+		    if(keyCode == 54) { // right key
+
+		    	indexButtons[0].click();
+		    }
+		    
+		    if(keyCode == 52) { // left key
+
+		    	indexButtons[1].click();
+		    }
+
+		    if(keyCode == 43) { // + key
+		    	indexButtons[2].click();
+		    }
+		    if(keyCode == 45) { // minus key ( - )
+		    	window.history.back();
+		    }
+		});
+	</script>
+
+</body>
+</html>

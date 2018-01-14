@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong>While the sauce is simmering, heat a skillet over medium high heat until very hot and add 1/2 tablespoon of peanut oil. Cook the chicken breasts, turning them a few times and lowering the heat if the chicken chars too quickly, until cooked through and browned well on both sides, 6 to 8 minutes total.</strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+        <img class="arrowFoward" src="../../arrowFoward.png">
+    </div>
+
+    <a class="nextStep" href="CTMstep7.html">nextStep</a>
+    <a class="nextStep" href="CTMstep5.html">nextStep</a>
+    <a class="nextStep" href="ChickenTikkaMasala.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+
+            if(keyCode == 54) { // right key
+
+                indexButtons[0].click();
+            }
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[1].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[2].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

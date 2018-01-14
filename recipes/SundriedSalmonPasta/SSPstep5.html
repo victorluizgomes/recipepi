@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RecipePi</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+	<div>
+		<p class="steps"><strong> Pop the salmon fillet into the alfredo mixture and put the lid on the skillet. Let it sit for about 3 minutes before flipping it over and putting the lid back on for another 3 mins.</strong></p>
+		<img class="arrowBackward" src="../../arrowBackward.png">
+		<img class="arrowFoward" src="../../arrowFoward.png">
+	</div>
+
+	<a class="nextStep" href="SSPstep6.html">nextStep</a>
+	<a class="nextStep" href="SSPstep4.html">nextStep</a>
+	<a class="nextStep" href="sundriedSalmonPasta.html"></a>
+
+	<script>
+		var indexButtons = document.querySelectorAll(".nextStep"); 
+
+		window.addEventListener('keypress', function (e) {
+			var keyCode = e.keyCode;
+		    console.log(keyCode);
+
+		    if(keyCode == 54) { // right key
+
+		    	indexButtons[0].click();
+		    }
+		    
+		    if(keyCode == 52) { // left key
+
+		    	indexButtons[1].click();
+		    }
+
+		    if(keyCode == 43) { // + key
+		    	indexButtons[2].click();
+		    }
+		    if(keyCode == 45) { // minus key ( - )
+		    	window.history.back();
+		    }
+		});
+	</script>
+
+</body>
+</html>

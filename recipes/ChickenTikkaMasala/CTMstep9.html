@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipePi</title>
+    <link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+    <div>
+        <p class="steps"><strong> Serving time! Transfer the chicken to a serving dish and garnish with additional cilantro sprigs. Serve with naan, and Basmati rice. </strong></p>
+        <img class="arrowBackward" src="../../arrowBackward.png">
+    </div>
+
+    <a class="nextStep" href="CTMstep8.html">nextStep</a>
+    <a class="nextStep" href="ChickenTikkaMasala.html"></a>
+
+    <script>
+        var indexButtons = document.querySelectorAll(".nextStep"); 
+
+        window.addEventListener('keypress', function (e) {
+            var keyCode = e.keyCode;
+            console.log(keyCode);
+            
+            if(keyCode == 52) { // left key
+
+                indexButtons[0].click();
+            }
+
+            if(keyCode == 43) { // + key
+                indexButtons[1].click();
+            }
+            if(keyCode == 45) { // minus key ( - )
+                window.history.back();
+            }
+        });
+    </script>
+
+</body>
+</html>

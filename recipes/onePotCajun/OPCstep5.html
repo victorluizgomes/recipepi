@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RecipePi</title>
+	<link rel="stylesheet" type="text/css" href="../../assets/recipePi.css">
+</head>
+<body>
+
+	<div>
+		<p class="steps"><strong>Remove pot from heat and stir in parmesan cheese. <br>Stir in chopped parsley and sprinkle with additional cajun seasoning to taste.</strong></p>
+		<img class="arrowBackward" src="../../arrowBackward.png">
+	</div>
+
+	<a class="nextStep" href="OPCstep4.html">nextStep</a>
+	<a class="nextStep" href="onePotCajun.html"></a>
+
+	<script>
+		var indexButtons = document.querySelectorAll(".nextStep"); 
+
+		window.addEventListener('keypress', function (e) {
+			var keyCode = e.keyCode;
+		    console.log(keyCode);
+		    
+		    if(keyCode == 52) { // left key
+
+		    	indexButtons[0].click();
+		    }
+
+		    if(keyCode == 43) { // + key
+		    	indexButtons[1].click();
+		    }
+		    if(keyCode == 45) { // minus key ( - )
+		    	window.history.back();
+		    }
+		});
+	</script>
+
+</body>
+</html>
