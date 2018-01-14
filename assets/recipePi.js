@@ -24,8 +24,12 @@ window.addEventListener('keypress', function (e) {
     	indexButtons[currentIndex].click();
     }
 
-    if(keyCode == 45) {
+    if(keyCode == 45) { // - key
     	window.history.back();
+    }
+
+    if(keyCode == 42) { // * key
+        window.location.reload();
     }
 });
 

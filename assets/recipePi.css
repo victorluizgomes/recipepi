@@ -14,7 +14,13 @@ body {
 #victorRecipeTitle {
 	font-size: 75px;
 	margin: 45px auto;
-	width: 1070px;
+	width: 910px;
+}
+
+#sethRecipeTitle {
+	font-size: 75px;
+	margin: 45px auto;
+	width: 860px;
 }
 
 #ingredientsTitle {
@@ -22,7 +28,7 @@ body {
 	margin: 0 auto;
 	margin-top: 10px;
 	margin-bottom: 30px;
-	width: 590px;
+	width: 490px;
 }
 
 #centeredMenuButtons {
@@ -32,7 +38,7 @@ body {
 
 #centeredButtons {
 	margin: 0 auto;
-	width: 420px;
+	width: 410px;
 }
 
 .button {
